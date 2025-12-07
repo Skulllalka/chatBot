@@ -4,12 +4,16 @@ import sqlite3
 from datetime import datetime, timedelta
 import threading
 import time
+import os
+
+
+
 
 # Бот для управления учебными заданиями и расписанием
 # Функции: добавление/удаление/редактирование заданий, просмотр списка, расписание, статистика, уведомления
 # Ссылка на бота @StepochkinDzBot
 
-TOKEN = '8504597965:AAFdYv5kLCMAOwBSksLXeB-NPEGU9scl6ME'
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
 # Инициализация БД
