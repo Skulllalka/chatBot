@@ -10,7 +10,7 @@ import os
 # Функции: добавление/удаление/редактирование заданий, просмотр списка, расписание, статистика, уведомления
 # Ссылка на бота @StepochkinDzBot
 
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = '8504597965:AAFdYv5kLCMAOwBSksLXeB-NPEGU9scl6ME'
 bot = telebot.TeleBot(TOKEN)
 
 # Инициализация БД
